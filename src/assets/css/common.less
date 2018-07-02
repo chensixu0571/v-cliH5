@@ -1,0 +1,37 @@
+@keyframes loading {
+	0% {
+		transform: rotate(0deg)
+	}
+	100% {
+		transform: rotate(360deg)
+	}
+}
+@-webkit-keyframes loading {
+	0% {
+		transform: rotate(0deg)
+	}
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+.loading__box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate(-50%, -50%,0);
+  margin:auto;
+  color:#666;
+  font-size:14px;
+  .loading__icon{
+    display: inline-block;
+  	width: 25px;
+  	height: 25px;
+  	border: 1px solid #9D9D9E;
+  	border-right: 2px solid transparent;
+  	border-radius: 50%;
+  	-webkit-animation: loading 1s infinite linear;
+  	animation: loading 1s infinite linear
+  }
+}
